@@ -1,11 +1,10 @@
 
 import { useState } from "react";
 import Timeline from "./Timeline";
-import EventDetails from "./EventDetail2";
 import { Link, useNavigate } from "react-router-dom";
 
 const GOOGLE_FORM_LINK =
-  "https://forms.google.com/"; // Replace with your Google Form link
+  "https://forms.gle/p9mTx7d22hEvAhSp8"; // Replace with your Google Form link
 
 const eventDetails = [
   {
@@ -232,12 +231,12 @@ const navigation = useNavigate();
                   </span>
                 </button>
 
-                <a
-                  href="#events"
+                <Link
+                  to="/event"
                   className="rounded-xl border border-white/15 px-7 py-4 text-center font-semibold text-slate-200 transition hover:bg-white/5"
                 >
                   Explore Event
-                </a>
+                </Link>
               </div>
 
               <div className="mt-9 flex flex-wrap gap-6 text-sm text-slate-400">
@@ -263,8 +262,8 @@ const navigation = useNavigate();
                       </p>
 
                       <h2 className="mt-3 text-3xl font-black">
-                        TECH
-                        <span className="gradient-text">NOVA</span>
+                        ZEN
+                        <span className="gradient-text">THRA</span>
                         '26
                       </h2>
                     </div>
@@ -325,7 +324,7 @@ const navigation = useNavigate();
           <div className="mx-auto max-w-7xl">
             <div className="max-w-3xl">
                 <p className="text-sm font-bold uppercase tracking-[0.3em] text-cyan-400">
-                  About TECHNOVA '26
+                  About ZENTHRA '26
                 </p>
 
                 <h2 className="mt-4 text-4xl font-black sm:text-5xl">
@@ -335,7 +334,7 @@ const navigation = useNavigate();
                 </h2>
 
                 <p className="mt-7 leading-8 text-slate-400">
-                  TECHNOVA '26 is a vibrant technical symposium organized by the
+                  ZENTHRA '26 is a vibrant technical symposium organized by the
                   Department of Information Technology, bringing together passionate
                   students, innovative minds and technology enthusiasts. The symposium
                   provides an exciting platform to showcase technical skills, present
@@ -421,7 +420,7 @@ const navigation = useNavigate();
 
           <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-slate-400 sm:text-lg">
             Choose your challenge, showcase your skills and experience the
-            excitement of TECHNOVA '26.
+            excitement of ZENTHRA '26.
           </p>
            <button
                   onClick={()=>{navigation("/event")}}
@@ -443,7 +442,7 @@ const navigation = useNavigate();
                 <h2 className="mt-4 text-3xl font-black sm:text-5xl">
                   Ready to be part of
                   <br />
-                  <span className="gradient-text">TECHNOVA '26?</span>
+                  <span className="gradient-text">ZENTHRA '26?</span>
                 </h2>
 
                 <p className="mx-auto mt-5 max-w-xl text-slate-400">
@@ -472,13 +471,29 @@ const navigation = useNavigate();
             <p className="mt-1 text-sm text-slate-500">
               Department of Information Technology
             </p>
+           
+<a
+  href="https://maps.app.goo.gl/3AwxxnVfk67nsmg1A"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2 text-sm text-slate-400 transition hover:text-cyan-400"
+>
+  <span>📍</span>
+  <span className="font-medium">Event Location:</span>
+  <span className="text-cyan-400 hover:underline">
+    Google Maps ↗
+  </span>
+</a>
+
+
           </div>
 
           <p className="text-sm text-slate-500">
-            © 2026 TECHNOVA '26. All rights reserved.
+            © 2026 ZENTHRA '26. All rights reserved.
           </p>
         </div>
       </footer>
+
     </div>
   );
 }

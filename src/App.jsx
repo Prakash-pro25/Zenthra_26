@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import Home from "./home";
- import Event from "./EventDetail2";
+ import Event from "./EventDetails";
 
 
 function App() {

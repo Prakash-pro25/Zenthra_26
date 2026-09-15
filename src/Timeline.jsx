@@ -15,7 +15,7 @@ export default function Timeline() {
       time: "10:00 AM",
       title: "Opening Ceremony",
       description:
-        "Welcome address, introduction to TECHNOVA '26 and an overview of the day's activities.",
+        "Welcome address, introduction to ZENTHRA '26 and an overview of the day's activities.",
       icon: "🎤",
       side: "right",
     },
@@ -92,11 +92,11 @@ export default function Timeline() {
           </p>
 
           <h2 className="mt-4 text-4xl font-black sm:text-5xl">
-            TECHNOVA <span className="gradient-text">'26</span>
+            ZENTHRA <span className="gradient-text">'26</span>
           </h2>
 
           <p className="mt-5 text-slate-400">
-            Follow the complete journey of TECHNOVA '26.
+            Follow the complete journey of ZENTHRA '26.
           </p>
         </div>
 
@@ -151,7 +151,7 @@ export default function Timeline() {
         <div className="mt-20 text-center">
           <div className="inline-flex items-center gap-3 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-6 py-3 text-sm font-semibold text-cyan-300">
             <span className="h-2 w-2 animate-pulse rounded-full bg-cyan-400" />
-            Be Part of TECHNOVA '26
+            Be Part of ZENTHRA '26
           </div>
         </div>
 
